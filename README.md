@@ -1,14 +1,14 @@
 
 # Big Integer Calculator in C
 
-This project implements a Big Integer Calculator using linked lists in C. It supports basic operations such as addition, subtraction, multiplication, division (not fully implemented), power, square, cube, square root, and factorial on large integers that cannot be represented by traditional integer types.
+This project implements a Big Integer Calculator using linked lists in C. It supports basic operations such as addition, subtraction, multiplication, division, power, square, cube, square root, and factorial on large integers that cannot be represented by traditional integer types.
 
 ## Features
 
 - **Addition of Big Integers**
 - **Subtraction of Big Integers**
 - **Multiplication of Big Integers**
-- **Division of Big Integers** (Not fully implemented)
+- **Division of Big Integers**
 - **Exponentiation (Power) of Big Integers**
 - **Square of Big Integers**
 - **Cube of Big Integers**
@@ -36,20 +36,18 @@ The program uses linked lists to represent large integers, where each node conta
 - **recieve_quotient()**: Compares two linked lists representing numbers and returns `1` if the first number is greater or equal, and `0` otherwise.
 - **iszero()**: Checks if a big integer is zero.
 - **appendnode()**: Appends a new node to the end of a linked list.
+-  **quotient_genreator()**: Generates the quotient for division.
 
 ### Arithmetic Operations:
 - **addint()**: Adds two big integers.
 - **subint()**: Subtracts the second big integer from the first.
 - **multiply_int()**: Multiplies two big integers.
+- **divide()**: Divide two big integers.
 - **square_int()**: Computes the square of a big integer.
 - **cube_int()**: Computes the cube of a big integer.
 - **power_int()**: Computes the exponentiation of one big integer raised to the power of another.
 - **factorial()**: Computes the factorial of a big integer.
 - **sqrt_int()**: Computes the square root of a big integer.
-
-### Utility Functions:
-- **quotient_genreator()**: Generates the quotient for division (currently unused).
-- **divide()**: Divides two big integers (division is not fully implemented).
 
 ## Compilation
 
@@ -138,6 +136,9 @@ When prompted for a big integer, enter the number as a sequence of digits (witho
 #### Multiplication:
 1. Choose **3. Multiplication** and enter two big integers.
 
+#### Division:
+1. Choose **4. Division** and enter two big integers.
+
 #### Power:
 1. Choose **5. Power** and enter:
    ```bash
@@ -155,10 +156,10 @@ When prompted for a big integer, enter the number as a sequence of digits (witho
 
 ## Limitations
 
-- **Division** is not fully implemented yet.
+- **Division** algorithm is not efficient and have bugs.
 - The program **does not handle negative numbers**.
-- It is not **optimized for very large integers** in terms of performance.
+- Some functions like **factorial are not optimized for very large integers** in terms of performance.
 
-## Author
+## Contributing
+Contributions are welcome! Fork the repository and submit pull requests for new functions or bug fixes.
 
-Anshdeep Rawat
